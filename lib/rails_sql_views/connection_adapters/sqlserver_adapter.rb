@@ -10,7 +10,6 @@ module RailsSqlViews
         return false
       end
 
-
       # Get all of the non-view tables from the currently connected schema
       def base_tables(name = nil)
         # this is untested
