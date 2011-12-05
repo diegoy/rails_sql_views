@@ -58,9 +58,9 @@ module RailsSqlViews
         execute view_sql
       end
 
-#      def drop_table_with_cascade(table_name, options = {})
-#        execute "DROP TABLE #{quote_table_name(table_name)} CASCADE"
-#      end
+      def drop_table_with_cascade(table_name, options = {})
+        execute "DROP TABLE #{quote_table_name(table_name)}"
+      end
 
       # Drop a view.
       # The +options+ hash can include the following keys:
