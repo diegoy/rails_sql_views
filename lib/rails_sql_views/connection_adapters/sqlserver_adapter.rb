@@ -19,7 +19,7 @@ module RailsSqlViews
 
       # Returns all the view names from the currently connected schema.
       def views(name = nil)
-        select_values("SELECT table_name FROM information_schema.views WHERE TABLE_TYPE = 'VIEWS'", name)
+        select_values("SELECT table_name FROM information_schema.views", name)
       end
 
       # Get the view select statement for the specified view.
