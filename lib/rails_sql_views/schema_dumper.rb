@@ -1,5 +1,6 @@
 module RailsSqlViews
   module SchemaDumper
+    include 'active_support/core_ext/class/attribute_accessors'
     def self.included(base)
       base.alias_method_chain :trailer, :views
       base.alias_method_chain :dump, :views
@@ -110,4 +111,3 @@ module RailsSqlViews
 
   end
 end
-

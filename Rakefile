@@ -7,7 +7,7 @@ require 'rake/gempackagetask'
 require File.join(File.dirname(__FILE__), 'lib/rails_sql_views', 'version')
 
 PKG_BUILD       = ENV['PKG_BUILD'] ? '.' + ENV['PKG_BUILD'] : ''
-PKG_NAME        = 'rails_sql_views'
+PKG_NAME        = 'mereghost-rails_sql_views'
 PKG_VERSION     = RailsSqlViews::VERSION::STRING + PKG_BUILD
 PKG_FILE_NAME   = "#{PKG_NAME}-#{PKG_VERSION}"
 PKG_DESTINATION = ENV["PKG_DESTINATION"] || "../#{PKG_NAME}"
@@ -50,7 +50,7 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = "rails_sql_views"
+    s.name = "mereghost-rails_sql_views"
     s.summary = "Library which adds SQL Views to ActiveRecord."
     s.email = "josh@technicalpickles.com"
     s.homepage = "http://activewarehouse.rubyforge.org/rails_sql_views"
