@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "mereghost-rails_sql_views"
-  s.version = "0.8.1"
+  s.version = "0.8.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Anthony Eden"]
-  s.date = "2012-09-13"
+  s.date = "2012-09-28"
   s.description = "Adds support for using SQL views within ActiveRecord"
   s.email = "josh@technicalpickles.com"
   s.extra_rdoc_files = [
