@@ -1,8 +1,8 @@
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
-require 'rake/packagetask'
-require 'rake/gempackagetask'
+require 'rdoc/task'
+#require 'rake/packagetask'
+#require 'rake/gempackagetask'
 
 require File.join(File.dirname(__FILE__), 'lib/rails_sql_views', 'version')
 
